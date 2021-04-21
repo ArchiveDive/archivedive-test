@@ -1,0 +1,47 @@
+/* Legend */
+/* TODO swtich from screen sizes to variables ?  */
+.legend {
+    display: none;
+}
+
+#legend-gender {
+    display: none;
+}
+
+.legend {
+    position: fixed;
+    /* bottom: var(--legend-y);
+    left: var(--legend-x);
+    width: var(--legend-width);
+    text-align: var(--legend-align); */
+    bottom: 30vh;
+    /* left: 50vw; */
+    width: 100%;
+    text-align: center;
+    /* transform: translateX(50%); */
+}
+
+.legend-square {
+    display: inline-block;
+    width: var(--legend-square-size);
+    height: var(--legend-square-size);
+    transform: translateY(-25%);
+}
+
+.legend-label {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: var(--info-text-font-size);
+}
+
+.legend-line {
+    display: inline-block;
+    padding: 2%;
+}
+
+#legend-fall { background-color: orange; }
+#legend-winter { background-color: blue; }
+#legend-spring { background-color: green; }
+#legend-summer { background-color: red; }
+#legend-male { background-color: blue; }
+#legend-female { background-color: purple; }
