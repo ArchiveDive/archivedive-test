@@ -30,6 +30,7 @@
     position: fixed;
     pointer-events: auto;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 #region-map-container, #ring-example-container {
     display: block;
