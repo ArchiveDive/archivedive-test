@@ -37,9 +37,10 @@
     max-height: var(--dropdown-arrow-size-max);
     right: 30px;
     transform: translateY(-50%);
-    background: var(--down-arrow-icon-url);
+    /* background: var(--down-arrow-icon-url);
     background-size: 100%, 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    padding: 0px;
 }
 
 #filter-selector-1, #filter-selector-2 {

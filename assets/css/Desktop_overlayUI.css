@@ -227,6 +227,7 @@
     min-width: var(--ring-arrow-size-min);
     max-width: var(--ring-arrow-size-max);
     border-color: rgba(0, 0, 0, 0);
+    padding: 0px;
 }
 #ring-control-right:hover, #ring-control-left:hover {
     background-color: var(--hover-bkgd-color);
@@ -235,16 +236,16 @@
 #ring-control-left{
     position: fixed;
     left: var(--ring-ctrl-padding-x);
-    background: var(--left-arrow-icon-url);
+    /* background: var(--left-arrow-icon-url);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 #ring-control-right{
     position: fixed;
     right: var(--ring-ctrl-padding-x);
-    background: var(--right-arrow-icon-url);
+    /* background: var(--right-arrow-icon-url);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 /* help overlay */

@@ -51,9 +51,10 @@
     max-height: var(--dropdown-arrow-size-max);
     right: 5%;
     margin-top: calc(var(--filter-height) / 16);
-    background: var(--down-arrow-icon-url);
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
+    /* background: var(--down-arrow-icon-url); */
+    /* background-size: 100%, 100%; */
+    /* background-repeat: no-repeat; */
+    padding: 0px;
 }
 
 /* shuffle */
