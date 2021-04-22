@@ -107,7 +107,8 @@
     bottom: var(--ring-ctrl-area-y);
 }
 
-#ring-control-right, #ring-control-left {
+/* #ring-control-right, #ring-control-left { */
+.ring-arrow {
     position: absolute;
     width: var(--ring-arrow-size);
     min-width: var(--ring-arrow-size-min);
@@ -115,37 +116,15 @@
     height: var(--ring-arrow-size);
     min-height: var(--ring-arrow-size-min);
     max-height: var(--ring-arrow-size-max);
-    /* width: 68px; */
-    /* height: 76px; */
     padding: 0px;
     border-color: rgba(0, 0, 0, 0);
 }
 
 #ring-control-left{
     left: var(--ring-ctrl-padding-x);
-    /* left: 200px; */
-    /* background: var(--left-arrow-icon-url); */
-    /*
-    background-size: 100%, 100%;
-    -o-background-size: 100%, 100%;
-    -moz-background-size: 100%, 100%;
-    -webkit-background-size: 100%, 100%;
-    background-repeat: no-repeat;
-    background-position: center; */
-    background-color: cyan;
-    /* z-index: -1; */
 }
-
 #ring-control-right{
-    /* right: 200px; */
     right: var(--ring-ctrl-padding-x);
-    /* background: var(--right-arrow-icon-url);
-    background-size: 100%, 100%;
-    -o-background-size: 100%, 100%;
-    -moz-background-size: 100%, 100%;
-    -webkit-background-size: 100%, 100%;
-    background-repeat: no-repeat;
-    background-position: center;    z-index: -1; */
 }
 
 /* hide extra elem from desktop */

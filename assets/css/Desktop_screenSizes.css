@@ -127,6 +127,9 @@
     .back-btn {
         display: inline-block;
     }
+    #back-to-detailview-btn {
+        min-width: 135px;
+    }
     /* legend */
     .legend {
         bottom: 10vh;

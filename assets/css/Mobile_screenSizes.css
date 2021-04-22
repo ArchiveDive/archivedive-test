@@ -12,8 +12,8 @@
 
         --ring-ctrl-area-y: 35%;
         --ring-ctrl-padding-x: 24%;
-        --dropdown-arrow-size-min: 20px;
-        --dropdown-arrow-size-max: 25px;
+        --dropdown-arrow-size-min: 30px;
+        --dropdown-arrow-size-max: 40px;
 
         --explore-btn-width: 45vw;
     }
@@ -29,5 +29,14 @@
 
     .dropdown-arrow-img {
         right: 3%;
+    }
+    .back-btn-text {
+        display: block;
+    }
+    .back-btn {
+        display: inline-block;
+    }
+    #back-to-detailview-btn {
+        min-width: 135px;
     }
 }

@@ -89,9 +89,6 @@
     min-width: 95px;
     height: calc(var(--back-icon-size) + 2%);
 }
-#back-to-detailview-btn {
-    min-width: 135px;
-}
 .back-btn:hover {
     background-color: var(--hover-bkgd-color);
 }
@@ -102,12 +99,13 @@ button.back-btn{
     display: inline-block;
     width: var(--back-icon-size);
     height: var(--back-icon-size);
-    background-image: var(--back-icon-url);
-    background-size: 100% 100%;
+    /* background-image: var(--back-icon-url); */
+    /* background-size: 100% 100%; */
     position: absolute;
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
+    padding: 0%;
 }
 .back-btn-text {
     display: none;
