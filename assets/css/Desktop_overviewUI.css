@@ -7,6 +7,38 @@
     top: 0%;
 }
 
+/* override bootstrap button */
+.btn, button {
+    border-radius: 0px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+button:focus {
+    outline-style: none;
+}
+
+/* help button */
+#help-btn {
+    position: fixed;
+    top: var(--help-icon-y);
+    left: var(--help-icon-left);
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+#help-btn:hover {
+    opacity: 0.7;
+}
+#help-btn-img {
+    height: var(--help-icon-size);
+    min-height: var(--help-icon-size-min);
+    max-height: var(--help-icon-size-max);
+    width: var(--help-icon-size);
+    min-width: var(--help-icon-size-min);
+    max-width: var(--help-icon-size-max);
+    padding: 0%;
+}
+
 /* help overlay */
 #close-help-overlay-btn {
     display: block;
@@ -41,12 +73,12 @@
 }
 #region-map-container {
     top: 0%;
-    height: 60vh;
+    height: var(--map-cont-height);
     width: 100vw;
 }
 #ring-example-container {
-    top: 60vh;
-    height: 40vh;
+    top: var(--map-cont-height);
+    height: calc(100 - var(--map-cont-height));
     width: 100vw;
 }
 #region-map, #ring-example {
@@ -58,8 +90,8 @@
     object-fit: contain;
 }
 #region-map {
-    top: 35%;
-    max-width: 90%;
+    top: var(--map-y);
+    width: 80%;
     transform: translate(-50%, 0%);
 }
 #ring-example {
@@ -160,7 +192,7 @@
     color: var(--off-white);
     font-family: 'Oswald';
     font-size: var(--button-font-size);
-    min-width: 95px;
+    min-width: calc(var(--back-icon-size) + 2%);
     height: calc(var(--back-icon-size) + 2%);
 }
 .back-btn:hover {
@@ -175,7 +207,7 @@ button.back-btn{
     height: var(--back-icon-size);
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 2%;
     transform: translateY(-50%);
     padding: 0%;
 }

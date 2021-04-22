@@ -241,23 +241,3 @@
     position: fixed;
     right: var(--ring-ctrl-padding-x);
 }
-
-/* help button */
-#help-btn {
-    display: none;
-    position: fixed;
-    bottom: 250%;
-    left: 30px;
-}
-#help-btn:hover {
-    opacity: 0.7;
-}
-#help-btn-img {
-    height: var(--help-icon-size);;
-    min-height: var(--help-icon-size-min);
-    max-height: var(--help-icon-size-max);
-    width: var(--help-icon-size);
-    min-width: var(--help-icon-size-min);
-    max-width: var(--help-icon-size-max);
-    padding: 0px;
-}

@@ -65,31 +65,39 @@
 
     --explore-btn-width: 60vw;
 
+    --map-cont-height: 55vh;
+
     /* colors */
     --off-white: #dfdfdf;
-    --item-bkgd-color: #221E29;
+    --item-bkgd-color: #282432;
     --hover-bkgd-color: #37353B;
     --tooltip-bkgd-color: #555;
-    --btn-bkgd-color: #3B363F;
+    --btn-bkgd-color: #8A72BB96;
     --gradient-color: linear-gradient(90deg, #2E2D6F 0%, #682052 100%);
 
     /* positions */
     --main-content-position-left: 50%;
     --filter-title-y: 13%;
     --explore-btn-y: 8%;
+
     --back-btn-y: 10%;
     --back-btn-x: 8%;
+    --help-back-btn-y: 8%;
+
     --legend-x: 0%;
     --legend-y: calc(30*var(--vh));
     --legend-padding-x: 5%;
 
+    --help-icon-y: -55%;
+    --help-icon-left: 10%;
+    --map-y: 50%;
+
     /* image sizes */
     --back-icon-size: 48px;
 
-    --help-icon-size: calc(3.5 * var(--vh));
-    --help-icon-size-min: 40px;
-    --help-icon-size-max: 50px;
-    --help-icon-y: -35%;
+    --help-icon-size: calc(4 * var(--vh));
+    --help-icon-size-min: 50px;
+    --help-icon-size-max: 80px;
 
     --nav-arrow-size: 10;
     --dropdown-arrow-size: 10;

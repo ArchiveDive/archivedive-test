@@ -10,13 +10,12 @@
     border: 0px;
     background: var(--item-bkgd-color);
     width: var(--dropdown-width);
-    margin: auto;
+    margin: 0%;
+    padding-bottom: 5px;
 }
 
 .dropdown-filter-option{
-    border-color: rgba(200,200,200, 0.3);
     border-style: none;
-    border-bottom-style: solid;
     width:100%;
     color: white;
     font-family: 'Oswald';
@@ -144,26 +143,4 @@
 .scroll-filter-item, .scroll-filter-item-selected {
     padding-top: var(--filter-item-padding-y);
     transform: translateX(var(--filter-item-shift));
-}
-
-/* help button */
-#help-btn {
-    display: none;
-    position: fixed;
-    top: var(--help-icon-y);
-    left: 10%;
-    border-style: none;
-    background-color: rgba(0, 0, 0, 0);
-}
-#help-btn:hover {
-    opacity: 0.7;
-}
-#help-btn-img {
-    height: var(--help-icon-size);
-    min-height: var(--help-icon-size-min);
-    max-height: var(--help-icon-size-max);
-    width: var(--help-icon-size);
-    min-width: var(--help-icon-size-min);
-    max-width: var(--help-icon-size-max);
-    padding: 0%;
 }
