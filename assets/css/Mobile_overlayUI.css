@@ -124,13 +124,13 @@
     /* left: var(--ring-ctrl-padding-x); */
     left: 200px;
     background: var(--left-arrow-icon-url);
-    background-color: red;
     background-size: 100%, 100%;
     -o-background-size: 100%, 100%;
     -moz-background-size: 100%, 100%;
     -webkit-background-size: 100%, 100%;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: cyan;
 }
 
 #ring-control-right{
@@ -141,9 +141,8 @@
     -o-background-size: 100%, 100%;
     -moz-background-size: 100%, 100%;
     -webkit-background-size: 100%, 100%;
-    background-position: center;
     background-repeat: no-repeat;
-
+    background-position: center;
 }
 
 /* hide extra elem from desktop */
