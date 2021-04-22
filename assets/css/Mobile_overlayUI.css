@@ -123,8 +123,8 @@
 #ring-control-left{
     /* left: var(--ring-ctrl-padding-x); */
     left: 200px;
-    /* background: var(--left-arrow-icon-url); */
-    background: red;
+    background: var(--left-arrow-icon-url);
+    background-color: red;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
 }
