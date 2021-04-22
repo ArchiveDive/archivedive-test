@@ -97,7 +97,7 @@
 }
 
 .scroll-filter-row {
-    height: 12vh;
+    height: calc(12 * var(--vh));
     height: var(--filter-height);
     margin-top: 4%;
     margin-bottom: 4%;

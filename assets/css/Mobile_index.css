@@ -29,7 +29,7 @@
     --ring-ctrl-area-y: 30%;
     --ring-ctrl-area-width: 200px;
     --ring-ctrl-padding-x: 8%;
-    --ring-arrow-size: 5vh;
+    --ring-arrow-size: calc(5*var(--vh));
     --ring-arrow-size-min: 50px;
     --ring-arrow-size-max: 90px;
 
@@ -44,7 +44,7 @@
     --viz-btn-width: 50vw;
     --dropdown-width: 90vw;
     
-    --dropdown-arrow-size: 20vh;
+    --dropdown-arrow-size: calc(20 * var(--vh));
     --dropdown-arrow-size-min: 40px;
     --dropdown-arrow-size-max: 50px;
 
@@ -76,13 +76,13 @@
     --back-btn-y: 10%;
     --back-btn-x: 8%;
     --legend-x: 0%;
-    --legend-y: 30vh;
+    --legend-y: calc(30*var(--vh));
     --legend-padding-x: 5%;
 
     /* image sizes */
     --back-icon-size: 48px;
 
-    --help-icon-size: 3.5vh;
+    --help-icon-size: calc(3.5 * var(--vh));
     --help-icon-size-min: 40px;
     --help-icon-size-max: 50px;
     --help-icon-y: -35%;
