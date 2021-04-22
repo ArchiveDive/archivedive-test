@@ -37,7 +37,7 @@
 
     --archive-btn-y: 5%;
     --btn-padding-y: calc(var(--large-font-size) / 2);
-    --btn-padding-x: calc(var(--large-font-size) * 2);
+    --btn-padding-x: calc(var(--large-font-size) * 10);
 
     /* elem sizing */
     --viz-ctrl-area-width: 100%;

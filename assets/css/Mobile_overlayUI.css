@@ -80,8 +80,8 @@
     left: 50%;
     transform: translateX(-50%); 
     font-size: var(--large-font-size);
-    /* padding-right: var(--btn-padding-x); */
-    /* padding-left: var(--btn-padding-x); */
+    padding-right: var(--btn-padding-x);
+    padding-left: var(--btn-padding-x);
     /* padding-top: var(--btn-padding-y); */
     /* padding-bottom: var(--btn-padding-y); */
     z-index: -1;
