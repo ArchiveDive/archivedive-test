@@ -236,16 +236,10 @@
 #ring-control-left{
     position: fixed;
     left: var(--ring-ctrl-padding-x);
-    /* background: var(--left-arrow-icon-url);
-    background-size: 100%;
-    background-repeat: no-repeat; */
 }
 #ring-control-right{
     position: fixed;
     right: var(--ring-ctrl-padding-x);
-    /* background: var(--right-arrow-icon-url);
-    background-size: 100%;
-    background-repeat: no-repeat; */
 }
 
 /* help overlay */

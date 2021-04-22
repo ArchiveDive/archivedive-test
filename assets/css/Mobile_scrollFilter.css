@@ -189,9 +189,6 @@
     width: var(--help-icon-size);
     min-width: var(--help-icon-size-min);
     max-width: var(--help-icon-size-max);
-    /* background: var(--help-icon-url);
-    background-size: 100% 100%;
-    background-repeat: no-repeat; */
     padding: 0%;
 }
 

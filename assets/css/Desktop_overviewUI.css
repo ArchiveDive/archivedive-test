@@ -99,8 +99,6 @@ button.back-btn{
     display: inline-block;
     width: var(--back-icon-size);
     height: var(--back-icon-size);
-    /* background-image: var(--back-icon-url); */
-    /* background-size: 100% 100%; */
     position: absolute;
     top: 50%;
     left: 0%;
