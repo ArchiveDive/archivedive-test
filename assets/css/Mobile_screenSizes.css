@@ -16,6 +16,9 @@
         --dropdown-arrow-size-max: 40px;
 
         --explore-btn-width: 50vw;
+
+        --map-cont-height: 60vh;
+        --map-y: 35%;
     }
 
     #hm-logo {

@@ -19,6 +19,7 @@ button:focus {
 
 /* help button */
 #help-btn {
+    display: block;
     position: fixed;
     top: var(--help-icon-y);
     left: var(--help-icon-left);
