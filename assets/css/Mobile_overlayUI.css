@@ -67,14 +67,7 @@
     bottom: var(--archive-btn-y);
     left: 50%;
     transform: translateX(-50%); 
-    /* font-size: var(--large-font-size); */
-    /* padding-left: var(--btn-padding-x); */
     width: 30vw;
-    /*
-    padding-right: var(--btn-padding-x); */
-    /* padding-top: var(--btn-padding-y);
-    padding-bottom: var(--btn-padding-y); */
-    /* z-index: -1; */
 }
 
 #explore-more-btn {
@@ -83,27 +76,7 @@
     left: 50%;
     transform: translateX(-50%); 
     width: var(--explore-btn-width);
-    /* padding-right: var(--btn-padding-x);
-    padding-left: var(--btn-padding-x); */
-    /* padding-top: var(--btn-padding-y); */
-    /* padding-bottom: var(--btn-padding-y); */
-    /* z-index: -1; */
 }
-
-/* go to digital archive button */
-/* .digital-archive-btn{
-    width: 13vw;
-    min-width: 190px;
-    max-width: 200px;
-    bottom: 0px;
-} */
-/* 
-#side-info-area {
-    width: 100%;
-    height: 200px;
-    bottom: 10%;
-    font-size: 45px;
-} */
 
 #achivement-info-header {
     display: none;
@@ -111,8 +84,6 @@
 
 #short-bio {
     display: none;
-    /* max-height: 205px;
-    overflow-y: scroll; */
 }
 
 #fav-info-area {
@@ -128,18 +99,12 @@
     transform: translate(-50%);
 }
 
-/* #achivement-info-area {
-    width: 100%;
-    height: 100%;
-} */
-
 /* ring control */
 
 #ring-control-area {
     position: absolute;
     width: 100%;
     bottom: var(--ring-ctrl-area-y);
-    z-index: -1;
 }
 
 #ring-control-left{
@@ -154,14 +119,14 @@
 
 #ring-control-right, #ring-control-left {
     position: absolute;
-    width: var(--ring-arrow-size);
+    /* width: var(--ring-arrow-size);
     min-width: var(--ring-arrow-size-min);
     max-width: var(--ring-arrow-size-max);
     height: var(--ring-arrow-size);
     min-height: var(--ring-arrow-size-min);
-    max-height: var(--ring-arrow-size-max);
-    /* width: 68px; */
-    /* height: 76px; */
+    max-height: var(--ring-arrow-size-max); */
+    width: 68px;
+    height: 76px;
     border-color: rgba(0, 0, 0, 0);
     background-size: 100%, 100%;
     background-repeat: no-repeat;
