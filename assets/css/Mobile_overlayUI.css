@@ -126,6 +126,9 @@
     background: var(--left-arrow-icon-url);
     background-color: red;
     background-size: 100%, 100%;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -134,7 +137,11 @@
     /* right: var(--ring-ctrl-padding-x); */
     background: var(--right-arrow-icon-url);
     background-size: 100%, 100%;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 /* hide extra elem from desktop */

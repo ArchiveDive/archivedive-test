@@ -103,7 +103,7 @@
     --shuffle-icon-url: url('../images/grey-shuffle-icon.svg');
     --help-icon-url: url('../images/grey-help-icon.svg');
     --close-icon-url: url('../images/white-x-icon.png');
-    --region-map-url: url('../images/map-placeholder.png');
+    --region-map-url: url('../images/region-map.svg');
 
     /* misc */
     --legend-display: inline-block;
