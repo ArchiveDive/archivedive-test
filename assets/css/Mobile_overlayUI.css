@@ -7,42 +7,6 @@
     height: var(--overlay-area-height);
     font-family: Oswald;
 }
-/* 
-.hm-info-box {
-    background: rgba(0, 0, 0, 0.63);
-    backdrop-filter: blur(4px);
-    border: 3px solid;
-    border-image-source: linear-gradient(45deg, rgba(148, 26, 29, 1), rgba(46, 45, 111, 1));
-    border-image-slice: 1;
-} */
-
-/* #quote-info {
-    position: fixed;
-    top: 54%;
-    left: 50%;
-    color: #B0B0B0;
-    text-align: center;
-    font-size: x-large;
-    transform: translate(-50%, -50%);
-} */
-/* 
-#name-info {
-    position: fixed;
-    top: 48%;
-    left: 50%;
-    text-align: center;
-    font-size: 40px;
-    transform: translate(-50%, -50%);
-} */
-
-/* #occupation-info {
-    position: fixed;
-    font-size: xx-large;
-    width: 200px;
-    top: 50%;
-    right: 10%;
-    transform: translate(0%, -50%);
-} */
 
 .custom-btn {
     position: fixed;
@@ -57,7 +21,6 @@
     border-style: none;
     border-radius: 2px;
     overflow: visible;
-    background-color: purple;
 }
 .custom-btn:hover {
     background: var(--gradient-color);
@@ -70,7 +33,6 @@
     transform: translateX(-50%); 
     width: 30vw;
 }
-
 #explore-more-btn {
     position: absolute;
     top: var(--explore-btn-y);
@@ -82,11 +44,9 @@
 #achivement-info-header {
     display: none;
 }
-
 #short-bio {
     display: none;
 }
-
 #fav-info-area {
     display: none;
 }
@@ -107,8 +67,6 @@
     width: 100%;
     bottom: var(--ring-ctrl-area-y);
 }
-
-/* #ring-control-right, #ring-control-left { */
 .ring-arrow {
     position: absolute;
     width: var(--ring-arrow-size);
@@ -120,7 +78,6 @@
     padding: 0px;
     border-color: rgba(0, 0, 0, 0);
 }
-
 #ring-control-left{
     left: var(--ring-ctrl-padding-x);
 }
