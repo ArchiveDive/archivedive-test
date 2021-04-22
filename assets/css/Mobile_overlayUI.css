@@ -57,7 +57,7 @@
     border-style: none;
     border-radius: 2px;
     overflow: visible;
-    background-color: red;
+    background-color: purple;
 }
 .custom-btn:hover {
     background: var(--gradient-color);
