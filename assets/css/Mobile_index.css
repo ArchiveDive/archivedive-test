@@ -96,9 +96,9 @@
 
     /* images */
     --bkgd-img-url: url('../images/bg_detailView.png');
-    --down-arrow-icon-url: url('../images/white-arrow-icon-down.png');
-    --left-arrow-icon-url: url('../images/white-arrow-icon-left.png');
-    --right-arrow-icon-url: url('../images/white-arrow-icon-right.png');
+    --down-arrow-icon-url: url('../images/white-arrow-icon-down.svg');
+    --left-arrow-icon-url: url('../images/grey-arrow-icon-left.svg');
+    --right-arrow-icon-url: url('../images/grey-arrow-icon-right.svg');
     --back-icon-url: url('../images/white-arrow-icon-left.svg');
     --shuffle-icon-url: url('../images/grey-shuffle-icon.svg');
     --help-icon-url: url('../images/grey-help-icon.svg');
