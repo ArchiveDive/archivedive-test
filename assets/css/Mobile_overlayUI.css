@@ -108,25 +108,27 @@
 }
 
 #ring-control-left{
-    left: var(--ring-ctrl-padding-x);
+    /* left: var(--ring-ctrl-padding-x); */
+    left: 200px;
     background: var(--left-arrow-icon-url);
 }
 
 #ring-control-right{
-    right: var(--ring-ctrl-padding-x);
+    right: 200px;
+    /* right: var(--ring-ctrl-padding-x); */
     background: var(--right-arrow-icon-url);
 }
 
 #ring-control-right, #ring-control-left {
     position: absolute;
-    /* width: var(--ring-arrow-size);
+    width: var(--ring-arrow-size);
     min-width: var(--ring-arrow-size-min);
     max-width: var(--ring-arrow-size-max);
     height: var(--ring-arrow-size);
     min-height: var(--ring-arrow-size-min);
-    max-height: var(--ring-arrow-size-max); */
-    width: 68px;
-    height: 76px;
+    max-height: var(--ring-arrow-size-max);
+    /* width: 68px; */
+    /* height: 76px; */
     border-color: rgba(0, 0, 0, 0);
     background-size: 100%, 100%;
     background-repeat: no-repeat;
