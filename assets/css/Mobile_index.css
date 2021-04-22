@@ -1,7 +1,7 @@
 /* vars */
 :root {
     /* font sizes */
-    --delta: calc(0.015 * 100vh);
+    --delta: calc(0.015 * 100*var(--vh));
     --med-font-size: calc(var(--delta) + 1rem);
     --large-font-size: calc(var(--delta) + 1rem);
     --dropdown-font-size: 45px;
@@ -54,7 +54,7 @@
     --selected-item-width: 30vw;
     --filter-item-shift: 160px; /* TODO do not use px in js code */
 
-    --btn-height: 5vh;
+    --btn-height: calc(5*var(--vh));
     --btn-height-min: 40px;
     --btn-height-max: 110px;
 
