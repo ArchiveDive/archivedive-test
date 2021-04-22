@@ -4,10 +4,12 @@
     --delta: calc(0.015 * 100*var(--vh));
     --med-font-size: calc(var(--delta) + 1rem);
     --large-font-size: calc(var(--delta) + 1rem);
+
     --dropdown-font-size: 45px;
     --match-num-font-size:  calc(var(--delta) + 2rem);
-    --button-font-size:  calc(var(--delta) + 1rem);
-    --info-text-font-size: calc(var(--delta) + 1rem);
+    --button-font-size:  calc(var(--delta) + 0.8rem);
+    --info-text-font-size: calc(var(--delta) + 0.5rem);
+    --filter-item-font-size: calc(var(--delta) + 0.6rem);
 
     --scroll-area-height: 30%;
     --overlay-area-height: 70%;

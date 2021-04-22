@@ -82,13 +82,12 @@
     top: var(--explore-btn-y);
     left: 50%;
     transform: translateX(-50%); 
-    font-size: var(--large-font-size);
     width: var(--explore-btn-width);
     /* padding-right: var(--btn-padding-x);
     padding-left: var(--btn-padding-x); */
     /* padding-top: var(--btn-padding-y); */
     /* padding-bottom: var(--btn-padding-y); */
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 /* go to digital archive button */

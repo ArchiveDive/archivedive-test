@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 10px;
     width: 100%;
-    font-size: var(--med-font-size);
+    font-size: var(--filter-item-font-size);
     /* height: var(--scroll-area-height); */
 }
 
@@ -24,7 +24,7 @@
     color: white;
     font-family: 'Oswald';
     font-style: normal;
-    font-size: var(--med-font-size);
+    font-size: var(--filter-item-font-size);
     background: rgba(0,0,0,0);
     padding: 20px 0;
 }
