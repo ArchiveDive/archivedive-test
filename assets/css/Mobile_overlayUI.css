@@ -110,7 +110,8 @@
 #ring-control-left{
     /* left: var(--ring-ctrl-padding-x); */
     left: 200px;
-    background: var(--left-arrow-icon-url);
+    /* background: var(--left-arrow-icon-url); */
+    background: red;
 }
 
 #ring-control-right{
