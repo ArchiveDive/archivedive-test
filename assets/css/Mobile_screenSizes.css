@@ -15,6 +15,8 @@
         --ring-ctrl-padding-x: 24%;
         --dropdown-arrow-size-min: 20px;
         --dropdown-arrow-size-max: 25px;
+
+        --explore-btn-width: 45vw;
     }
 
     #hm-logo {
@@ -29,12 +31,4 @@
     .dropdown-arrow-img {
         right: 3%;
     }
-    
-
-    /* .scroll-filter-row {
-        height: 180px;
-    }
-    .scroll-filter-item, .scroll-filter-item-selected {
-        padding-top: 2px !important;
-    } */
 }
