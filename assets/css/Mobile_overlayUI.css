@@ -124,11 +124,12 @@
     /* left: var(--ring-ctrl-padding-x); */
     left: 200px;
     background: var(--left-arrow-icon-url);
-    background-color: green;
+    background-color: red;
     background-size: 100%, 100%;
     -o-background-size: 100%, 100%;
     -moz-background-size: 100%, 100%;
     -webkit-background-size: 100%, 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -140,6 +141,7 @@
     -o-background-size: 100%, 100%;
     -moz-background-size: 100%, 100%;
     -webkit-background-size: 100%, 100%;
+    background-position: center;
     background-repeat: no-repeat;
 
 }
