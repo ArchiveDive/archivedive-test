@@ -118,7 +118,6 @@
     /* width: 68px; */
     /* height: 76px; */
     border-color: rgba(0, 0, 0, 0);
-    z-index: -1;
 }
 
 #ring-control-left{
@@ -132,6 +131,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: cyan;
+    z-index: -1;
 }
 
 #ring-control-right{
@@ -143,7 +143,8 @@
     -moz-background-size: 100%, 100%;
     -webkit-background-size: 100%, 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;    z-index: -1;
+
 }
 
 /* hide extra elem from desktop */
