@@ -24,17 +24,25 @@
     width: 100vw;
 }
 
-#match-number {
+#match-number-container {
     position: fixed;
     font-weight: bold;
     text-align: center;
     color: var(--off-white);
     bottom: var(--match-num-y);
     left: var(--main-content-position-left);
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 50%);
     font-size: var(--match-num-font-size);
     width: 80vw;
-    max-width: calc(-1.5 * var(--ring-ctrl-padding-x));
+    max-width: var(--match-num-width-max);
+    min-height: calc(var(--match-num-font-size) * 4);
+}
+#match-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 /* hover thumbnail to see name */
 .subset-hover-name {
@@ -60,7 +68,7 @@
 }
 
 /* buttons */
-.custom-btn {
+/* .custom-btn {
     position: fixed;
     height: var(--btn-height);
     min-height: var(--btn-height-min);
@@ -75,7 +83,7 @@
 }
 .custom-btn:hover {
     background: var(--gradient-color);
-}
+} */
 /*placeholder*/
 #explore-more-btn{
     position: fixed;
@@ -87,7 +95,7 @@
 }
 
 /* go to digital archive button */
-.digital-archive-btn{
+/* .digital-archive-btn{
     width: var(--da-btn-width);
     min-width: var(--da-btn-width-min);
     max-width: var(--da-btn-width-max);
@@ -106,46 +114,27 @@
     font-weight: normal;
     font-size: var(--info-text-font-size);
 
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
     bottom: 130%;
     left: 50%;
     transform: translatex(-50%);
-}
-/* decoration */
-.tooltip-text:after {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 50%;
-    bottom: -70%;
-    transform: translateX(-50%);
-    border: 1rem solid;
-    border-color: #555 transparent transparent transparent;
-}  
-.digital-archive-btn:hover .tooltip-text {
-    visibility: visible;
-}
+} */
 
 #go-to-archive-btn {
     bottom: var(--da-btn-y);
 }
 #sub-go-to-archive-btn {
     bottom: var(--sub-da-btn-y);
+    position: relative;
 }
 
 /* Side info (general) */
-.header-dash-line {
-    display: none;
-}
 
 #side-info-area, #sub-side-info-area{
     position: fixed;
     width: var(--side-info-width);
     right: var(--side-info-x);
-    padding-left: 8%;
 }
 
 .hm-info-box {
@@ -208,16 +197,12 @@
     margin-bottom: 10px;
 }
 
-#sub-go-to-archive-btn {
-    position: relative;
-}
-
 /* ring arrows */
 #ring-control-area{
     position: fixed;
     left: var(--main-content-position-left);
     bottom: var(--ring-ctrl-y);
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 50%);
 }
 .ring-arrow {
     height: var(--ring-arrow-size);
@@ -228,6 +213,7 @@
     max-width: var(--ring-arrow-size-max);
     border-color: rgba(0, 0, 0, 0);
     padding: 0px;
+    transform: translateY(-50%);
 }
 #ring-control-right:hover, #ring-control-left:hover {
     background-color: var(--hover-bkgd-color);

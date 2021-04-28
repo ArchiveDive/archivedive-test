@@ -18,6 +18,8 @@
     <!-- libraries -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script id="jq-script" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <!-- not sure if this slows stuff down -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
@@ -37,32 +39,73 @@
     <style>
         #loading-page {
             position: fixed;
-            z-index: 1;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-image: url('../images/bg_detailView.png');
-            background-size: 100% 100%;
+            background-image: url('assets/images/loading-bkgd.jpg');
+            background-size: cover;
+            z-index: 1;
+            font-size: Oswald;
         }
-
-        #loading-page h1 {
+        #loading-page-start-btn {
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 75%;
             transform: translate(-50%, -50%);
+            width: 10vw;
+            min-width: 200px;
+            color: lightgrey;
+            background: linear-gradient(90deg, #2E2D6F 0%, #682052 100%);
+            z-index: 2;
+        }
+        #header-logo{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 700px;
+            max-width: 90vw;
+            height: 50px;
+            background-image: url('./assets/logos/thm-logo-white-orange.svg');
+            background-size: 100%, 100%;
+            background-repeat: no-repeat;
+
+        }
+        #header-slogan{
+            position: fixed;
+            left: 50%;
+            top: calc(50% + 40px);
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: calc(0.01*100vh + 1.3rem);
+            color: lightgrey;
+        }
+        #footer-credit {
+            position: fixed;
+            left: 50%;
+            bottom: 10%;
+            transform: translate(-50%,-50%);
+            font-size: calc(0.01*100vh + 0.5rem);
+            text-align: center;
+            text-decoration: underline;
+        }
+        #footer-credit a {
+            color: grey;
         }
     </style>
 
     <div id="loading-page">
-        <!-- <h1 style="color:white;">Loading ...</h1> -->
-        <div id="loading-page-startwords" style="color:white; font-size:100px">Placeholder of Introduce words... </div>
-        <div id="loading-page-processbar" style="display:none; color:white; font-size:100px">Placeholder of
-            ProcessBar...HistoryMaker 3000+ </div>
+        <div id="loading-page-header" style="color:white;display:none">
+            <div id="header-logo"></div>
+            <div id="header-slogan">Quickly explore thousands of African Americans</div>
+            <div id="footer-credit"><a href="https://www.etc.cmu.edu/blog/projects/archive-dive/" target="_blank">Created by CMU Entertainment Technology Center Students</a></div>
+        </div>
+        <button id="loading-page-start-btn" class="custom-btn" style="display:none">Start</button>
     </div>
 
     <!-- loading page scripts -->
-    <script src='./loadingPage.js'></script>
+    <script src='./loadingPage.js'>Start</script>
 
     <div id="landscape-page" style="display:none">
         <h1 style="color:white;">Please rotate your phone</h1>
@@ -86,11 +129,10 @@
 
             <div id="middle-display-area">
                 <!--filter titile-->
-                <span id="match-number"></span>
+                <div id="match-number-container"><div id="match-number"></div></div>
 
                 <!--hm info -->
                 <div id="side-info-area">
-                    <div class="header-dash-line"></div>
                     <div id="achivement-info-area">
                         <h2 id="achivement-info-header" class="hm-font">Biography </h2>
                         <div id="short-bio" class="hm-font-light fade-bottom hm-info-box"> </div>
@@ -117,8 +159,9 @@
                             </div>
                         </div>
                     </div> -->
-                    <button id="go-to-archive-btn" class="digital-archive-btn custom-btn">
-                        Learn More
+                    <button id="go-to-archive-btn" class="digital-archive-btn">
+                        <span class="archive-btn-text">Learn More</span>
+                        <span class="archive-btn-decor"><img src="assets/images/purple-arrow-icon-right.svg"></span>
                         <span class="tooltip-text">Opens in new tab</span>
                     </button>
                 </div>
@@ -142,7 +185,7 @@
                             aria-expanded="false">
                             <span id="filter-selector-cur-value-1">Maker</span>
                             <div class="dropdown-arrow-img">
-                                <img src="assets/images/white-arrow-icon-down.svg" class="btn-img">
+                                <img src="assets/images/white-arrow-icon-down.svg" class="btn-img dropdown-arrow">
                             </div>
                             <div></div>
                         </button>
@@ -181,7 +224,7 @@
                             aria-expanded="false">
                             <span id="filter-selector-cur-value-2"></span>
                             <div class="dropdown-arrow-img">
-                                <img src="assets/images/white-arrow-icon-down.svg" class="btn-img">
+                                <img src="assets/images/white-arrow-icon-down.svg" class="btn-img dropdown-arrow">
                             </div>
                         </button>
                         <div id="filter-selector-2" class="dropdown-menu">
@@ -211,18 +254,20 @@
 
             <!-- region filter help overlay -->
             <div id="help-overlay">
-                <div  id="region-map-container">
+                <div id="region-map-container">
                     <!-- <div id="region-map"></div> -->
                     <div id="region-explanation">Map of U.S. Census Bureau Regions</div>
                     <img src='assets/images/region-map.svg' id="region-map">
                 </div>
                 <div id="ring-example-container">
                     <!-- <div id="ring-example"></div> -->
-                    <div id="ring-explanation">HistoryMakers are ordered <span style="color:#8A72BB;">alphabetically</span> by their last names</div>
+                    <div id="ring-explanation">HistoryMakers are ordered <span
+                            style="color:#8A72BB;font-weight:bold">alphabetically</span> by their last names</div>
                     <img src='assets/images/ring-example.png' id="ring-example">
                 </div>
                 <button id="close-help-overlay-btn" class="back-btn">
-                    <div class="back-arrow-img"><img src="assets/images/white-arrow-icon-left.svg" class="btn-img"></div>
+                    <div class="back-arrow-img"><img src="assets/images/white-arrow-icon-left.svg" class="btn-img">
+                    </div>
                     <span class="back-btn-text">Back</span>
                 </button>
             </div>
@@ -248,10 +293,22 @@
                     <button id="viz-gender-btn" class="viz-btn">Gender</button>
                 </div>
             </div>
+            <div id="viz-control-area-dummy">
+                <h3 id="viz-header-dummy">Explore By</h3>
+                <div>
+                    <button class="viz-btn">Favorite Color</button>
+                </div>
+                <div>
+                    <button class="viz-btn">Favorite Season</button>
+                </div>
+                <div>
+                    <button class="viz-btn">Gender</button>
+                </div>
+            </div>
 
             <button id="back-to-detailview-btn" class="back-btn">
                 <div class="back-arrow-img"><img src="assets/images/white-arrow-icon-left.svg" class="btn-img"></div>
-                <span class="back-btn-text">Homepage</span>
+                <span class="back-btn-text">Home</span>
             </button>
 
             <button id="back-to-overview-btn" class="back-btn">
@@ -273,7 +330,10 @@
                     <div class="legend-square" id="legend-summer"></div><span class="legend-label">Summer</span>
                 </div>
                 <div class="legend-line">
-                    <div class="legend-square" id="legend-others"></div><span class="legend-label">Others</span>
+                    <div class="legend-square" id="legend-others"></div><span class="legend-label">Other Responses</span>
+                </div>
+                <div class="legend-line">
+                    <div class="legend-square" id="legend-multiple"></div><span class="legend-label">Multiple</span>
                 </div>
             </div>
             <div id="legend-gender" class="legend">
@@ -301,15 +361,15 @@
 
             <!--hm info -->
             <div id="sub-side-info-area">
-                <div class="header-dash-line"></div>
                 <div id="sub-name-info"></div>
                 <div id="sub-achivement-info-area">
                     <h2 id="sub-achivement-info-header" class="hm-font">Biography </h2>
                     <div id="sub-short-bio" class="hm-info-box fade-bottom"> </div>
                     <div id="sub-info-area-break"></div>
                 </div>
-                <button id="sub-go-to-archive-btn" class="digital-archive-btn custom-btn">
-                    Learn More
+                <button id="sub-go-to-archive-btn" class="digital-archive-btn">
+                    <span class="archive-btn-text">Learn More</span>
+                    <span class="archive-btn-decor"><img src="assets/images/purple-arrow-icon-right.svg"></span>
                     <span class="tooltip-text">Opens in new tab</span>
                 </button>
             </div>

@@ -7,6 +7,28 @@
     top: 0%;
 }
 
+/* filter dropdown */
+.dropdown-btn[aria-expanded="true"] .dropdown-arrow{
+    /* background-color: #42DCA3; */
+    transform: scaleY(-1);
+}
+
+/* filters */
+.scroll-filter-item, .scroll-filter-item-selected {
+    color: var(--off-white);
+    font-family: 'Oswald';
+    font-style: normal;
+    text-align: center;
+    font-size: var(--filter-item-font-size);
+    padding-top: var(--filter-item-padding-y);
+}
+
+.scroll-filter-item-selected {
+    background-image: var(--gradient-color);
+    border: var(--btn-border-weight) solid var(--off-white);
+    border-radius: var(--btn-border-radius);
+}
+
 /* override bootstrap button */
 .btn, button {
     border-radius: 0px;
@@ -15,6 +37,79 @@
 }
 button:focus {
     outline-style: none;
+}
+/* buttons base */
+.custom-btn {
+    position: fixed;
+    height: var(--btn-height);
+    min-height: var(--btn-height-min);
+    max-height: var(--btn-height-max);
+    color: var(--off-white);
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: var(--button-font-size);
+    background-color: var(--btn-bkgd-color);
+    border-style: none;
+    border-radius: 2px;
+}
+.custom-btn:hover {
+    background: var(--gradient-color);
+    border: var(--btn-border-weight) solid var(--off-white);
+}
+ /* digital archive btn */
+.digital-archive-btn{
+    width: var(--da-btn-width);
+    min-width: var(--da-btn-width-min);
+    max-width: var(--da-btn-width-max);
+    text-align: var(--learn-more-align);
+    padding: 0%;
+
+    color: var(--learn-more-color);
+    font-size: var(--button-font-size);
+    font-weight: bold;
+}
+.digital-archive-btn:hover .archive-btn-text{
+    text-decoration: underline;
+}
+.digital-archive-btn img {
+    height: calc(var(--button-font-size)/1.4);
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+.digital-archive-btn .tooltip-text {
+    visibility: hidden;
+    width: var(--da-btn-width);
+    min-width: var(--da-btn-width-min);
+    max-width: var(--da-btn-width-max);
+    background-color: var(--tooltip-bkgd-color);
+    color: var(--off-white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+    font-size: var(--info-text-font-size);
+
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+/* decoration */
+.tooltip-text:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 25%;
+    bottom: -70%;
+    transform: translateX(-50%);
+    border: 1rem solid;
+    border-color: #555 transparent transparent transparent;
+}  
+.digital-archive-btn:hover .tooltip-text {
+    visibility: visible;
 }
 
 /* help button */
@@ -144,7 +239,12 @@ button:focus {
 .filter-title {
     position: relative;
     font-size: var(--match-num-font-size);
-    color: var(--filter-title-color);
+}
+#overview-filter-title {
+    color: var(--off-white);
+}
+#subsetview-filter-title {
+    color: var(--inactive-title-color);
 }
 .match-title {
     position: relative;
@@ -153,14 +253,14 @@ button:focus {
 }
 
 /* viz control */
-#viz-control-area {
+#viz-control-area, #viz-control-area-dummy {
     position: fixed;
     text-align: center;
     width: var(--viz-ctrl-area-width);
     bottom: var(--viz-ctrl-area-y);
     right: var(--viz-ctrl-area-x);
 }
-#viz-header {
+#viz-header, #viz-header-dummy {
     font-weight: bold;
     font-size: var(--match-num-font-size);
 }
@@ -180,7 +280,17 @@ button:focus {
 }
 .viz-btn:hover, .viz-btn-selected {
     background: var(--gradient-color);
-    border: 2px solid var(--off-white);
+    border: var(--btn-border-weight) solid var(--off-white);
+}
+#viz-control-area-dummy {
+    display: none;
+}
+#viz-control-area-dummy > div > .viz-btn {
+    background: var(--gradient-color);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 3px solid white;
 }
 
 /* back buttons */
@@ -205,7 +315,9 @@ button.back-btn{
 .back-arrow-img {
     display: inline-block;
     width: var(--back-icon-size);
+    max-width: var(--back-icon-size-max);
     height: var(--back-icon-size);
+    max-height: var(--back-icon-size-max);
     position: absolute;
     top: 50%;
     left: 2%;
