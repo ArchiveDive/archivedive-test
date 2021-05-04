@@ -240,18 +240,17 @@
     -webkit-backdrop-filter: blur(5px);
 }
 #sub-side-info-area {
-    left: 50vw;
-}
-#sub-side-info-area{
     position: fixed;
-    transform: translate(-50%, 0%);
+    left: 50vw;
     top: var(--back-btn-y);
+    transform: translate(-50%, 0%);
+    width: 70vw;
     text-align: center;
 }
 #sub-hm-headshot {
     margin-top: 15%;
     margin-bottom: 10%;
-    max-height: calc(20 * var(--vh))
+    max-height: calc(30 * var(--vh))
 }
 #sub-occupation {
     font-size: var(--info-text-font-size);
