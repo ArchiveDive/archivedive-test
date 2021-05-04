@@ -251,7 +251,7 @@
 #sub-hm-headshot {
     margin-top: 15%;
     margin-bottom: 10%;
-    max-height: calc(30 * var(--vh))
+    max-height: calc(20 * var(--vh))
 }
 #sub-occupation {
     font-size: var(--info-text-font-size);
