@@ -33,4 +33,10 @@
         display: inline-block;
         min-width: 140px;
     }
+    #sub-hm-headshot {
+        margin-top: 10%;
+    }
+    #sub-hm-headshot, #sub-occupation #sub-hm-headshot {
+        margin-bottom: 5%;
+    }
 }

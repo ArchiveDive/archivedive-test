@@ -7,7 +7,7 @@
     --sub-match-num-font-size:  var(--match-num-font-size);
     --button-font-size:  calc(var(--delta) + 1rem);
     --info-header-font-size: calc(var(--delta) + 2rem);
-    --info-text-font-size: calc(var(--delta) + 0.5rem);
+    --info-text-font-size: calc(var(--delta) + 0.7rem);
     --filter-item-font-size: calc(var(--delta) + 1rem);
 
     --scroll-area-height: 30%;
@@ -166,8 +166,8 @@
 .scroll-filter-row {
     height: calc(12 * var(--vh));
     height: var(--filter-height);
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 #scroll-filter-area .col-1 {
     display: none;
