@@ -23,7 +23,7 @@
     --main-content-position-left: 50%;
     --filter-title-y: 7%;
 
-    --explore-more-btn-y: calc( 14*var(--filter-item-font-size));
+    --explore-more-btn-y: calc( 13*var(--filter-item-font-size));
     --explore-more-btn-padding-x: 5vw;
 
     --nav-bar-height: 10%;
