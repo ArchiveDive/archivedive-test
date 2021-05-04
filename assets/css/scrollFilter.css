@@ -70,7 +70,7 @@
     color: var(--off-white);
     font-family: 'Oswald';
     font-style: normal;
-    font-size: var(--dropdown-font-size);
+    font-size: var(--filter-item-font-size);
     text-align: center;
 
     padding: 2.5% 20px;

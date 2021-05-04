@@ -1,7 +1,6 @@
 :root {
     /* font sizes */
     --delta: calc(0.008 * 100vh);
-    --dropdown-font-size: calc(var(--delta) + 0.8rem);
     --filter-item-font-size: calc(0.012 * 100vh + 0.8rem);
     --info-header-font-size: calc(var(--delta) + 1.5rem);
     --info-text-font-size: calc(0.01 * 100vh + 0.7rem);
