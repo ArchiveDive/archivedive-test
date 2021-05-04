@@ -33,6 +33,9 @@
         display: inline-block;
         min-width: 140px;
     }
+    #side-info-area {
+        bottom: calc( (38*var(--vh)) + (2*1.25em));
+    }
     #sub-hm-headshot {
         margin-top: 10%;
     }
