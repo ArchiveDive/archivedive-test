@@ -108,6 +108,7 @@
     --back-icon-size-max: 40px;
 
     /* misc */
+    --vh: 1vh;
     --legend-display: block;
     --legend-align: left;
     --learn-more-align: left;

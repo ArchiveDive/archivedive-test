@@ -233,7 +233,7 @@
     height: 100%;
     left: 0px;
     top: 0px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     position: fixed;
     pointer-events: auto;
     backdrop-filter: blur(5px);
@@ -251,6 +251,7 @@
 #sub-hm-headshot {
     margin-top: 15%;
     margin-bottom: 10%;
+    max-height: calc(30 * var(--vh))
 }
 #sub-occupation {
     font-size: var(--info-text-font-size);

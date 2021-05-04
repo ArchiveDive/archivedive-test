@@ -11,7 +11,7 @@
 #side-info-area{
     position: fixed;
     transform: translate(-50%, 50%);
-    bottom: calc( (8*5vh) + (2*1.25em));
+    bottom: calc( (8*5*var(--vh)) + (2*1.25em));
     text-align: center;
     left: var(--main-content-position-left);
 }
