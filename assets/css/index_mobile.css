@@ -119,6 +119,11 @@
     display: none;
 }
 
+/* explore more */
+#explore-more-btn {
+    width: 60vw;
+}
+
 /* ring control */
 #ring-control-area {
     position: absolute;
