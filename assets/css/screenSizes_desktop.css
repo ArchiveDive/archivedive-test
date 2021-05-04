@@ -1,0 +1,253 @@
+
+/* pseudo mobile */
+@media screen and (max-width: 880px) {
+    :root {
+        --ring-ctrl-padding-x: -200px;
+        --ring-ctrl-y: 58%;
+        --da-btn-y: 0%;
+        --match-num-width-max: 100%;
+        --hm-logo-width: 200px;
+    }
+    /* scroll filters */
+    #scroll-filter-row {
+        height: 10vh;
+    }
+    #scroll-filter-container {
+        transform: translateY(-50%);
+    }
+    .col-7 {
+        flex: 0 0 150%;
+        max-width: 150%;
+        transform: translateX(-75%)
+    }
+    .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        transform: translateY(-120%);
+    }
+    #scroll-filter-1 {
+        transform: translate(-50%, -100%);
+    }
+    /* canvas */
+    #scene-canvas.detailview {
+        transform: translateY(-8%);
+        /* bottom: 30%; */
+    }
+    /* overview */
+    .back-btn {
+        transform: scale(0.7);
+    }
+    .title-area {
+        top: 14%;
+    }
+    #sub-achivement-info-area {
+        display: none;
+    }
+    #sub-side-info-area {
+        height: 10vh;
+        right: 50vw;
+        top: 75vh;
+        width: 100vw;
+        transform: translateX(50%);
+        text-align: center;
+    }
+}
+/* Small screens, Symmetrical layout --> asymmetrical */
+/* 800px */
+@media screen and (min-width: 55.0em) {
+    :root {
+        --main-content-position-left: 31%;
+        --match-num-y: var(--ring-ctrl-y);
+        --explore-more-btn-y: 20vh;
+        --viz-ctrl-area-x: 5%;
+        --viz-ctrl-area-width: 20%;
+        --legend-square-size: 10px;
+        --help-icon-y: -100%;
+        --filter-selector-width: calc(100% - 50px);
+    }
+    #hm-logo {
+        left: 1.5%;
+        transform: none;
+        width: var(--hm-logo-width);
+        height: var(--hm-logo-height);
+    }
+    #scene-canvas.detailview {
+        left: -18%;
+    }
+    #scene-canvas.overview {
+        transform: scale(0.8);
+        left: -10%;
+        top: 5%;
+    }
+    #zero-result-warning {
+        left: var(--main-content-position-left);
+    }
+    /* Scroll filters */
+    .scroll-btn, .scroll-filter-container {
+        display: block !important;
+    }
+    .shuffle-btn {
+        display: block !important;
+    }
+    .dropdown-btn {
+        text-align: left;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+    .dropdown-filter-option {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    /* Overlay and Overview UI */
+    #side-info-area, #sub-side-info-area {
+        width: var(--side-info-width);
+        height: 50vh;
+        right: var(--side-info-x);
+        left: unset;
+        top: 50vh;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+    #side-info-area {
+        padding-left: 2%;
+    }
+    #achivement-info-area, #fav-info-area {
+        display: inline-block;
+    }
+    #go-to-archive-btn, #sub-go-to-archive-btn {
+        bottom: unset;
+        left: unset;
+        width: unset;
+        margin-top: 5%;
+        position: relative;
+        transform: unset;
+        text-align: left;
+    }
+    #match-number-container {
+        width: 50vw;
+    }
+    .title-area {
+        width: 50%;
+        left: 40%;
+    }
+    .back-btn-text {
+        display: block;
+    }
+    .back-btn {
+        display: inline-block;
+        min-width: calc(var(--back-icon-size) + 3*var(--button-font-size));;
+    }
+    /* legend */
+    .legend {
+        bottom: 10vh;
+        left: 10vh;
+        width: auto;
+        text-align: left;
+    }
+    .legend-line {
+        display: block;
+        padding: unset;
+    }
+    /* help overlay */
+    #ring-example-container, #region-map-container {
+        top: unset;
+        height: 100vh;
+        width: 50vw;
+    }
+    #ring-example-container {
+        left: 0%;
+    }
+    #region-map-container {
+        left: 50%;
+    }
+    #region-map, #ring-example {
+        top: 40%;
+        width: 75%;
+        max-height: 75%;
+        display: block;
+        transform: translate(-50%, -50%);
+    }
+    #region-explanation, #ring-explanation {
+        top: unset;
+        width: 75%;
+        bottom: 20%;
+        text-align: center;
+    }
+}
+
+/* medium screen */
+@media screen and (min-width: 1200px) {
+    :root {
+        --main-content-position-left: 30%;
+        --side-info-width: 30vw;
+        --side-info-x: 10%;
+        --viz-ctrl-area-x: 0%;
+    }
+    #scene-canvas.detailview {
+        left: calc(var(--main-content-position-left) - 50%);
+    }
+    #scene-canvas.overview {
+        left: -10%;
+    }
+    #side-info-area {
+        padding-left: 3%;
+    }
+    /* scroll */
+    .col-7 {
+        flex: 0 0 var(--filters-width-2);
+        max-width: var(--filters-width-2);
+    }
+    .col-2 {
+        flex: 0 0 var(--dropdown-width-2);
+        max-width: var(--dropdown-width-2);
+    }
+}
+
+/* HD Screens */
+@media screen and (min-width: 1800px) {
+    :root {
+        --filter-item-font-size: calc(calc(0.011 * 100vh) + 0.8rem);
+        --dropdown-font-size: calc(calc(0.011 * 100vh) + 0.8rem);
+        --info-header-font-size: calc(0.02*100vh + 1.5rem);
+        --info-text-font-size: calc(0.01 * 100vh + 0.7rem);
+        --match-num-font-size: calc(0.011*100vh + 1.2rem);
+        --button-font-size: calc(0.011*100vh + 0.75rem);
+        --side-info-x: 15%;
+    }
+    .col-7 {
+        flex: 0 0 var(--filters-width-3);
+        max-width: var(--filters-width-3);
+    }
+    .col-2 {
+        flex: 0 0 var(--dropdown-width-3);
+        max-width: var(--dropdown-width-3);
+    }
+    .back-btn {
+        transform: scale(1);
+    }
+}
+
+
+/* VERTICAL*/
+/* Special case: very short */
+@media screen and (max-height : 630px) and (min-width: 55.0em) {
+    #fav-info-area {
+        display: none;
+    }
+    #side-info-area {
+        top: 45vh;
+        height: 40vh;
+    }
+    #short-bio {
+        max-height: 20vh;
+    }
+}
+
+@media screen and (min-height: 800px) and (min-width: 880px) {
+    :root {
+        --ring-ctrl-y: 28%;
+        --explore-more-btn-y: 18%;
+        --detailview-bottom: 35%;
+    }
+}

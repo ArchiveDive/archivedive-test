@@ -1,0 +1,264 @@
+/* vars */
+:root {
+    /* font sizes */
+    --delta: calc(0.015 * 100*var(--vh));
+    --med-font-size: calc(var(--delta) + 1rem);
+    --large-font-size: calc(var(--delta) + 1rem);
+
+    --dropdown-font-size: 45px;
+    --match-num-font-size:  calc(var(--delta) + 2rem);
+    --sub-match-num-font-size:  var(--match-num-font-size);
+    --button-font-size:  calc(var(--delta) + 0.8rem);
+    --info-header-font-size: calc(var(--delta) + 2rem);
+    --info-text-font-size: calc(var(--delta) + 0.5rem);
+    --filter-item-font-size: calc(var(--delta) + 0.6rem);
+
+    --scroll-area-height: 30%;
+    --overlay-area-height: 70%;
+
+    --high-emphasis-opacity: 87%;
+    --med-emphasis-opacity: 60%;
+    --disabled-opacity: 38%;
+
+    /* positioning */
+    --detailview-bottom: 45%;
+
+    --main-content-position-left: 50%;
+    --filter-title-y: 7%;
+
+    --explore-more-btn-y: calc( 16*var(--filter-item-font-size));
+    --explore-more-btn-padding-x: 5vw;
+
+    --nav-bar-height: 10%;
+    --content-height: 50%;
+    --filter-container-height: 40%;
+    --dropdown-arrow-right: 7%;
+    --dropdown-margin-left: 5vw;
+    
+    --match-num-y: 93%;
+
+    --ring-ctrl-area-y: 30%;
+    --ring-ctrl-area-width: 200px;
+    --ring-ctrl-padding-x: 8%;
+    --ring-arrow-size: calc(5*var(--vh));
+    --ring-arrow-size-min: 50px;
+    --ring-arrow-size-max: 90px;
+
+    --btn-padding-y: calc(var(--large-font-size) / 2);
+    --btn-padding-x: calc(var(--large-font-size) * 2);
+
+    --viz-ctrl-area-y: 4%;
+    --viz-ctrl-area-x: 0%;
+
+    --back-btn-y: 7%;
+    --back-btn-x: 8%;
+    --help-back-btn-y: 8%;
+
+    --legend-x: 0%;
+    --legend-y: calc(30*var(--vh));
+    --legend-padding-x: 5%;
+
+    --help-icon-y: -50%;
+    --help-icon-left: 5%;
+    --map-y: 50%;
+
+    /* elem sizing */
+    --viz-ctrl-area-width: 100%;
+    --viz-btn-width: 50vw;
+    --dropdown-width: 90vw;
+    --filter-selector-width: 90vw;
+    
+    --dropdown-arrow-size: calc(20 * var(--vh));
+    --dropdown-arrow-size-min: 40px;
+    --dropdown-arrow-size-max: 50px;
+
+    --filter-height: calc(var(--vh) * 12);
+    --filter-item-padding-y: calc(var(--filter-height) / 12);
+    --filter-item-padding-x: calc(var(--filter-height) / 4);
+    --selected-item-width: 30vw;
+    --filter-item-shift: 160px; /* TODO do not use px in js code */
+
+    --btn-height: calc(5*var(--vh));
+    --btn-height-min: 40px;
+    --btn-height-max: 110px;
+
+    --legend-width: 100%;
+    --legend-square-size: 20px;
+
+    --explore-btn-width: 60vw;
+
+    --map-cont-height: 55vh;
+
+    /* image sizes */
+    --back-icon-size: 48px;
+
+    --help-icon-size: calc(4 * var(--vh));
+    --help-icon-size-min: 50px;
+    --help-icon-size-max: 80px;
+
+    --nav-arrow-size: 10;
+    --dropdown-arrow-size: 10;
+
+    /* misc */
+    --legend-display: inline-block;
+    --legend-align: center;
+    --learn-more-align: center;
+    --btn-border-weight: 1.5px;
+    --btn-border-radius: 3px;
+}
+
+#zero-result-warning {
+    top: calc(40 * var(--vh));
+}
+
+/* side info */
+#achivement-info-header {
+    display: none;
+}
+#short-bio {
+    display: none;
+}
+.tooltip-text {
+    display: none;
+}
+
+/* ring control */
+#ring-control-area {
+    position: absolute;
+    width: 100%;
+    bottom: var(--ring-ctrl-area-y);
+}
+.ring-arrow {
+    position: absolute;
+    width: var(--ring-arrow-size);
+    min-width: var(--ring-arrow-size-min);
+    max-width: var(--ring-arrow-size-max);
+    height: var(--ring-arrow-size);
+    min-height: var(--ring-arrow-size-min);
+    max-height: var(--ring-arrow-size-max);
+    padding: 0px;
+    border-color: rgba(0, 0, 0, 0);
+}
+#ring-control-left{
+    left: var(--ring-ctrl-padding-x);
+}
+#ring-control-right{
+    right: var(--ring-ctrl-padding-x);
+}
+
+/* hide extra elem from desktop */
+#info-area-break{
+    display: none;
+}
+.go-to-archive-hover-popup{
+    display: none;
+}
+
+/* scroll filters */
+.shuffle-btn {
+    display: none !important;
+}
+/* Scroll filters */
+.scroll-btn {
+    display: none !important;
+}
+#scroll-filter-area .row {
+    flex-wrap: nowrap !important;
+    margin-left: 0px !important;
+}
+.scroll-filter-row {
+    height: calc(12 * var(--vh));
+    height: var(--filter-height);
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+#scroll-filter-area .col-1 {
+    display: none;
+}
+/* override for dropdown */
+#scroll-filter-area .col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 45%;
+}
+/* override for filter scroll row */
+#scroll-filter-area .col-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 45%;
+    transform: translateY(100%)
+}
+.scroll-filter-container {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    bottom: 0%;
+    margin-top: 2%;
+    border: 0px;
+    background: var(--item-bkgd-color)
+}
+.scroll-filter-body {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+#scroll-filter-1, #scroll-filter-2 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* filter items */
+.scroll-filter-item, .scroll-filter-item-selected {
+    transform: translateX(var(--filter-item-shift));
+}
+.scroll-filter-item {
+    overflow-x: hidden;
+    white-space: nowrap;
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+}
+.scroll-filter-item-selected {
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+    width: var(--selected-item-width) !important;
+}
+
+/* subset view */
+#sub-side-info-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    pointer-events: auto;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#sub-side-info-area {
+    left: 50vw;
+}
+#sub-side-info-area{
+    position: fixed;
+    transform: translate(-50%, 0%);
+    top: var(--back-btn-y);
+    text-align: center;
+}
+#sub-hm-headshot {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+#sub-occupation {
+    font-size: var(--info-text-font-size);
+    margin-bottom: 10%;
+}
+#sub-short-bio {
+    margin-bottom: 10%;
+}
+#back-to-subset-btn {
+    z-index: 9;
+}
