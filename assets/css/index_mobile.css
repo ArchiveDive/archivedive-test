@@ -5,7 +5,7 @@
 
     --match-num-font-size:  calc(var(--delta) + 2rem);
     --sub-match-num-font-size:  var(--match-num-font-size);
-    --button-font-size:  calc(var(--delta) + 1rem);
+    --button-font-size:  calc(var(--delta) + 0.8rem);
     --info-header-font-size: calc(var(--delta) + 2rem);
     --info-text-font-size: calc(var(--delta) + 0.7rem);
     --filter-item-font-size: calc(var(--delta) + 1rem);
@@ -132,20 +132,6 @@
 }
 .ring-arrow {
     position: absolute;
-    width: var(--ring-arrow-size);
-    min-width: var(--ring-arrow-size-min);
-    max-width: var(--ring-arrow-size-max);
-    height: var(--ring-arrow-size);
-    min-height: var(--ring-arrow-size-min);
-    max-height: var(--ring-arrow-size-max);
-    padding: 0px;
-    border-color: rgba(0, 0, 0, 0);
-}
-#ring-control-left{
-    left: var(--ring-ctrl-padding-x);
-}
-#ring-control-right{
-    right: var(--ring-ctrl-padding-x);
 }
 
 /* hide extra elem from desktop */
@@ -229,7 +215,7 @@
 }
 
 /* overview */
-#viz-header {
+#viz-header, #viz-header-dummy {
     display: none;
 }
 
@@ -268,11 +254,4 @@
 }
 #back-to-subset-btn {
     z-index: 9;
-}
-
-/* canvas */
-#scene-canvas.overview {
-    position: absolute;
-    transform: scale(0.8) translateY(-18%);
-    left: 0%;
 }

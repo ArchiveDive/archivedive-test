@@ -64,6 +64,11 @@ h2 { /* TODO still need this? */
     position: absolute;
     bottom: var(--detailview-bottom);
 }
+#scene-canvas.overview {
+    position: absolute;
+    transform: translateY(-9%);
+    left: 0%;
+}
 canvas {
     position: absolute;
     /* border: 5px solid red; */
@@ -183,4 +188,39 @@ button:focus {
 }  
 .digital-archive-btn:hover .tooltip-text {
     visibility: visible;
+}
+/* ring arrows */
+.ring-arrow {
+    height: var(--ring-arrow-size);
+    min-height: var(--ring-arrow-size-min);
+    max-height: var(--ring-arrow-size-max);
+    width: var(--ring-arrow-size);
+    min-width: var(--ring-arrow-size-min);
+    max-width: var(--ring-arrow-size-max);
+    border-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+}
+#ring-control-left{
+    left: var(--ring-ctrl-padding-x);
+}
+#ring-control-right{
+    right: var(--ring-ctrl-padding-x);
+}
+
+/* hover */
+.dropdown-btn:hover {
+    background-color: var(--hover-bkgd-color);
+}
+.scroll-btn:hover {
+    background-color: var(--hover-bkgd-color) !important;
+}
+.scroll-filter-item-selected:hover {
+    cursor: context-menu; /* avoid type cursor */
+}
+.scroll-filter-item:hover {
+    background-color: var(--hover-bkgd-color);
+    cursor: pointer;
+}
+.dropdown-filter-option:hover {
+    background-color: var(--hover-bkgd-color);
 }
