@@ -1,6 +1,6 @@
 :root {
     /* image urls */
-    --bkgd-img-url: url('../images/bg_detailView.png');
+    --bkgd-img-url: url('../images/bg_detailView.jpg');
     --shuffle-icon-url: url('../images/grey-shuffle-icon.svg');
     --left-arrow-icon-url: url('../images/grey-arrow-icon-left.svg');
     --right-arrow-icon-url: url('../images/grey-arrow-icon-right.svg');
