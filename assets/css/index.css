@@ -160,10 +160,10 @@ button:focus {
     width: var(--da-btn-width);
     min-width: var(--da-btn-width-min);
     max-width: var(--da-btn-width-max);
-    background-color: var(--tooltip-bkgd-color);
-    color: var(--off-white);
+    background-color: var(--off-white);
+    color: #333;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 5px;
     padding: 5px 0;
     font-family: 'Source Sans Pro';
     font-weight: normal;
@@ -171,9 +171,11 @@ button:focus {
 
     position: absolute;
     z-index: 1;
-    bottom: 130%;
+    bottom: -180%;
     left: 50%;
     transform: translatex(-50%);
+    filter: drop-shadow(2px 2px 2px #333);
+
 }
 .tooltip-text:after { /* decoration */
     content: ' ';
@@ -181,10 +183,10 @@ button:focus {
     width: 0;
     height: 0;
     left: 25%;
-    bottom: -70%;
+    top: -70%;
     transform: translateX(-50%);
     border: 1rem solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: transparent transparent var(--off-white) transparent;
 }  
 .digital-archive-btn:hover .tooltip-text {
     visibility: visible;

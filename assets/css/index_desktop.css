@@ -48,6 +48,8 @@
     --match-num-y: 89%;
     --match-num-width-max: calc(-1.5 * var(--ring-ctrl-padding-x));
     --filter-title-y: 10%;
+    --side-info-bottom: 45%;
+    --sub-da-btn-y: 0%;
 
     --viz-ctrl-area-y: 4%;
     --viz-ctrl-area-x: auto;
@@ -61,9 +63,6 @@
 
     --help-icon-y: -200%;
     --help-icon-left: 30px;
-
-    /* --da-btn-y: 0%; */
-    --sub-da-btn-y: 0%;
 
     --filter-item-padding-y: 0.5vh;
     --dropdown-arrow-right: 30px;
@@ -152,16 +151,12 @@
     position: fixed;
     transform: translateY(-50%);
 }
-/* #ring-control-left{
-    position: fixed;
-    left: var(--ring-ctrl-padding-x);
-}
-#ring-control-right{
-    position: fixed;
-    right: var(--ring-ctrl-padding-x);
-} */
 
 /* scroll filters */
+#filter-selector-1, #filter-selector-2 {
+    filter: drop-shadow(4px -2.5px 1.5px #111);
+}
+
 /* scroll left and right buttons */
 .scroll-btn {
     padding: 0px;
