@@ -105,7 +105,12 @@
     --btn-border-weight: 1.5px;
     --btn-border-radius: 3px;
 }
-
+/* misc */
+/* .fade-bottom { */
+canvas.overview {
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 5%);
+    mask-image: linear-gradient(to top, transparent 0%, black 5%);
+}
 #zero-result-warning {
     top: calc(40 * var(--vh));
 }
@@ -247,7 +252,7 @@
 #sub-hm-headshot {
     margin-top: 15%;
     margin-bottom: 10%;
-    max-height: calc(30 * var(--vh))
+    height: calc(30 * var(--vh))
 }
 #sub-occupation {
     font-size: var(--info-text-font-size);

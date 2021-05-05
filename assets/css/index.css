@@ -66,7 +66,7 @@ h2 { /* TODO still need this? */
 }
 #scene-canvas.overview {
     position: absolute;
-    transform: translateY(-9%);
+    transform: scale(0.9) translateY(-9%);
     left: 0%;
 }
 canvas {
