@@ -290,6 +290,13 @@
     transform: translate(-50%, 0%);
 }
 
+/* canvas */
+#scene-canvas.overview {
+    position: absolute;
+    transform: translateY(-9%);
+    left: 0%;
+}
+
 /* Reference (remove later)
 0% = #00
 10% = #16

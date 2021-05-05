@@ -228,6 +228,11 @@
     width: var(--selected-item-width) !important;
 }
 
+/* overview */
+#viz-header {
+    display: none;
+}
+
 /* subset view */
 #sub-side-info-container {
     display: none;
@@ -263,4 +268,11 @@
 }
 #back-to-subset-btn {
     z-index: 9;
+}
+
+/* canvas */
+#scene-canvas.overview {
+    position: absolute;
+    transform: scale(0.8) translateY(-18%);
+    left: 0%;
 }

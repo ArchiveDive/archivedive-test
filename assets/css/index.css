@@ -64,11 +64,6 @@ h2 { /* TODO still need this? */
     position: absolute;
     bottom: var(--detailview-bottom);
 }
-#scene-canvas.overview {
-    position: absolute;
-    transform: translateY(-9%);
-    left: 0%;
-}
 canvas {
     position: absolute;
     /* border: 5px solid red; */

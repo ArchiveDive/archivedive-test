@@ -6,25 +6,38 @@
 
 .legend {
     position: fixed;
-    bottom: 30vh;
-    width: 95%;
+    bottom: calc(25*var(--vh));
+    width: 100vw;
     text-align: center;
 }
 
 .legend-square {
-    display: inline-block;
+    /* display: none; */
+    /* display: inline-block;
     width: var(--legend-square-size);
     height: var(--legend-square-size);
-    transform: translateY(-25%);
+    transform: translateY(-25%); */
 }
 
 .legend-label {
     display: inline-block;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: var(--info-text-font-size);
 }
 
 .legend-line {
     display: inline-block;
-    padding: 0 2%;
+    text-align: center;
+    font-weight: bold;
+    margin: 1vw;
+    padding: 0.5rem 0;
+    width: 20vw;
+    background-color: var(--btn-bkgd-color);
+}
+.legend-line:hover {
+    opacity: 0.6;
+}
+
+.legend-other {
+    width: 42.5vw;
 }
