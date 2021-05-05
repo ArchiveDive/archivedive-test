@@ -10,21 +10,14 @@
     width: 100vw;
     text-align: center;
 }
-
 .legend-square {
-    /* display: none; */
-    /* display: inline-block;
-    width: var(--legend-square-size);
-    height: var(--legend-square-size);
-    transform: translateY(-25%); */
+    display: none;
 }
-
 .legend-label {
     display: inline-block;
     /* margin-left: 10px; */
     font-size: var(--info-text-font-size);
 }
-
 .legend-line {
     display: inline-block;
     text-align: center;
@@ -37,7 +30,10 @@
 .legend-line:hover {
     opacity: 0.6;
 }
-
 .legend-other {
     width: 42.5vw;
+}
+.inactive-legend {
+    opacity: 0.43;
+    pointer-events: none;
 }
