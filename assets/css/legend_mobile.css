@@ -37,3 +37,11 @@
 .legend-other {
     width: 42.5vw;
 }
+#legend-loading {
+    width: 100vw;
+    color: white;
+    bottom: calc(20 * var(--vh));
+    text-align: center;
+    position: fixed;
+    font-size: var(--info-header-font-size);
+}
