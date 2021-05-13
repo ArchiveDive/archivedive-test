@@ -1,3 +1,4 @@
+
 /* pseudo mobile */
 @media screen and (max-width: 880px) {
     :root {
@@ -6,17 +7,11 @@
         --da-btn-y: 0%;
         --match-num-width-max: 100%;
         --hm-logo-width: 200px;
-        --sub-match-num-font-size: calc(var(--delta) + 0.7rem);
+        --sub-match-num-font-size: calc(var(--delta) + 0.9rem);
         --info-text-font-size: calc(0.01 * 100vh + 0.5rem);
     }
     #header-slogan {
         font-size: calc(0.01*100vh + 1.0rem) !important;
-    }
-    #scene-canvas.detailview {
-        transform: translateY(-8%);
-    }
-    #scene-canvas.overview {
-        transform: scale(0.6) translateY(-15%);
     }
     /* scroll filters */
     #scroll-filter-row {
@@ -38,17 +33,19 @@
     #scroll-filter-1 {
         transform: translate(-50%, -100%);
     }
-    /* overlay */
-    .digital-archive-btn {
-        text-align: center;
+    /* canvas */
+    #scene-canvas.detailview {
+        transform: translateY(-8%);
+        /* bottom: 30%; */
     }
+    /* overview */
     .back-btn {
         transform: scale(0.7);
     }
-    #sub-achivement-info-area, #overview-short-bio {
+    #sub-achivement-info-area {
         display: none;
     }
-    #sub-side-info-area, #overview-side-info-area {
+    #sub-side-info-area {
         height: 10vh;
         right: 50vw;
         top: 75vh;
@@ -56,11 +53,7 @@
         transform: translateX(50%);
         text-align: center;
     }
-    .tooltip-text {
-        display: none !important;
-    }
 }
-
 /* Small screens (800px), Symmetrical layout --> asymmetrical */
 @media screen and (min-width: 55.0em) {
     :root {
@@ -202,6 +195,7 @@
     #side-info-area {
         padding-left: 3%;
     }
+    /* scroll */
     .col-7 {
         flex: 0 0 var(--filters-width-2);
         max-width: var(--filters-width-2);
@@ -252,7 +246,6 @@
     }
 }
 
-/* Special case: very short and narrow */
 @media screen and (min-height: 800px) and (min-width: 880px) {
     :root {
         --ring-ctrl-y: 28%;

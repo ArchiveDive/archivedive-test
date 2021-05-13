@@ -127,6 +127,11 @@
 #achivement-info-area {
     display: none;
 }
+/* #achivement-info-header{
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: var(--info-header-font-size);
+} */
 #sub-hm-headshot {
     display: none;
 }
@@ -154,26 +159,11 @@
 }
 
 /* scroll filters */
-#scroll-filter-area {
-    z-index: 10;
-}
-#scroll-filter-area .row {
-    flex-wrap: nowrap !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-.scroll-filter-row {
-    position: relative;
-    height: 5vh;
-    min-height: 35px;
-    max-height: 50px;
-}
 #filter-selector-1, #filter-selector-2 {
     filter: drop-shadow(4px -2.5px 1.5px #111);
 }
-.dropdown-filter-option {
-    padding: 6px 20px;
-}
+
+/* scroll left and right buttons */
 .scroll-btn {
     padding: 0px;
     background-color: var(--item-bkgd-color);
@@ -197,29 +187,6 @@
     max-width: var(--scroll-arrow-size-max);
     margin: auto;
     margin-top: -3px;
-}
-.scroll-filter-container {
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    height: 100%;
-    background-color: var(--item-bkgd-color);
-}
-.scroll-filter-body {
-    position: absolute;
-    height: 100%;
-}
-#scroll-filter-1 {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-#scroll-filter-2 {
-    position: relative;
-    margin-top: 3%;
-    margin-bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, 0%);
 }
 
 /* custom columns */
@@ -259,10 +226,46 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/* tile hover tooltip */
-.subset-hover-name {
-    font-size: var(--button-font-size);
+/* scroll filters */
+#scroll-filter-area {
+    z-index: 10;
+}
+#scroll-filter-area .row {
+    flex-wrap: nowrap !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.scroll-filter-row {
+    position: relative;
+    height: 5vh;
+    min-height: 35px;
+    max-height: 50px;
+}
+.dropdown-filter-option {
+    padding: 6px 20px;
+}
+.scroll-filter-container {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    background-color: var(--item-bkgd-color);
+}
+.scroll-filter-body {
+    position: absolute;
+    height: 100%;
+}
+#scroll-filter-1 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#scroll-filter-2 {
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 /* Reference (remove later)
